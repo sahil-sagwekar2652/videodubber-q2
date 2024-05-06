@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt update -y
-# sudo apt-get install -y python3-pip
+sudo apt-get --assume-yes install python3-pip
 
 git clone https://github.com/sahil-sagwekar2652/videodubber-q2.git
 cd videodubber-q2
