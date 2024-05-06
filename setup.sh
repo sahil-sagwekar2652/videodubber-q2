@@ -10,4 +10,5 @@ python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
-python main.py
+gunicorn --bind 0.0.0.0:5000 --access-logfile /path/to/access.log --error-logfile /path/to/error.log wsgi:app
+

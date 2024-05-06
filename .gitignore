@@ -35,3 +35,7 @@ terraform.rc
 
 # Ignore python venv
 venv/
+
+instance/database.db
+access.log
+error.log
