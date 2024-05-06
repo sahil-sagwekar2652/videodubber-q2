@@ -1,0 +1,13 @@
+[Unit]
+Description=Flask App
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/videodubber-q2
+Environment="PATH=/home/ubuntu/videodubber-q2/venv/bin"
+ExecStart=/home/ubuntu/.local/bin/gunicorn --bind 0.0.0.0:5000 wsgi:app
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
