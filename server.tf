@@ -1,4 +1,4 @@
-resource "aws_instance" "mumble" {
+resource "aws_instance" "api" {
   ami             = "ami-03f65b8614a860c29"
   instance_type   = "t2.micro"
   key_name        = aws_key_pair.my_key.key_name
